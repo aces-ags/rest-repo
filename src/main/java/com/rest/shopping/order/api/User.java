@@ -12,6 +12,7 @@ public class User implements Serializable {
 	private String userName;
 	private String firstName;
 	private String lastName;
+	private boolean active;
 
 	public String getEmail() {
 		return email;
@@ -67,6 +68,14 @@ public class User implements Serializable {
 
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+
+	public boolean isActive() {
+		return active;
+	}
+
+	public void setActive(boolean active) {
+		this.active = active;
 	}
 
 }
